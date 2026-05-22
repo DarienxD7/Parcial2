@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferencia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <div class="barra-superior">
+            <p>Transferencia</p>
+        </div>
+
+        <div class="titulo">
+            <h2>Transferencia</h2>
+        </div>
+
+        <div class="formulario">
+
+            <div class="fila">
+                <label>Unidad Actual</label>
+                <input type="text" id="unidadActual" value="0252 - Nivel Central">
+            </div>
+
+            <div class="fila">
+                <label>Oficina Actual</label>
+                <input type="text" id="oficinaActual" value="100 DIRECCION">
+            </div>
+
+            <div class="fila">
+                <label>Responsable Actual</label>
+                <input type="text" id="responsableActual" value="DR. WALTER AGREDA CO">
+            </div>
+
+            <div class="fila">
+                <label>Nueva Unidad</label>
+                <select id="nuevaUnidad">
+                    <option value="">-- Cargando... --</option>
+                </select>
+            </div>
+
+            <div class="fila">
+                <label>Nueva Oficina</label>
+                <select id="nuevaOficina">
+                    <option value="">-- Cargando... --</option>
+                </select>
+            </div>
+
+            <div class="fila">
+                <label>Nuevo Responsable</label>
+                <select id="nuevoResponsable">
+                    <option value="">-- Cargando... --</option>
+                </select>
+            </div>
+
+            <div class="fila">
+                <label>Auxiliar</label>
+                <select id="auxiliar">
+                    <option value="">-- Cargando... --</option>
+                </select>
+            </div>
+
+            <div id="mensajeError" class="mensaje-error" style="display:none;"></div>
+            <div id="mensajeExito" class="mensaje-exito" style="display:none;"></div>
+
+            <div class="botones">
+                <button class="aceptar" onclick="enviarTransferencia()">Aceptar</button>
+                <button class="cancelar" onclick="cancelar()">Cancelar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contenedor tabla-contenedor">
+        <div class="barra-superior">
+            <p>Registros de Transferencia</p>
+        </div>
+        <div class="titulo">
+            <h2>Historial</h2>
+        </div>
+        <div style="padding: 16px; overflow-x: auto;">
+            <table id="tablaRegistros">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Unidad Actual</th>
+                        <th>Oficina Actual</th>
+                        <th>Responsable Actual</th>
+                        <th>Nueva Unidad</th>
+                        <th>Nueva Oficina</th>
+                        <th>Nuevo Responsable</th>
+                        <th>Auxiliar</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaBody">
+                    <tr id="filaVacia">
+                        <td colspan="9" style="text-align:center; color:#999;">Sin registros aún</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
