@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "checkJs": true,
+    "strict": true,
+    "typeRoots": [
+      "c:\\Users\\beltr\\.vscode\\extensions\\jordimantilla.extension2-0-1.1.4\\types"
+    ],
+    "types": [
+      "ADODBWrapper",
+      "global",
+      "MSScriptControlHelper",
+      "PowerStreet.CacheClient",
+      "PowerStreet",
+      "PowerStreet.Interfaces",
+      "PowerStreet.SessionManager",
+      "PowerStreet.Networking",
+      "PowerStreetDB",
+      "PowerStreetFS",
+      "PWST_Reporter",
+      "PwstAzure",
+      "SQLBuilder",
+      "systemC#",
+      "vbSendMail"
+    ]
+  },
+  "include": [
+    "**/*.js",
+    "c:\\Users\\beltr\\.vscode\\extensions\\jordimantilla.extension2-0-1.1.4\\types\\**\\*.d.ts"
+  ]
+}
+
