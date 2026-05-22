@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSIAF</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="barra-superior"></div>
+
+        <div class="banner">
+            <div class="logo-color"></div>
+            <div class="logo-texto">
+                <h1>VSIAF</h1>
+                <p>Sistema de Activos Fijos</p>
+            </div>
+        </div>
+
+        <div class="login-box">
+
+            <div class="titulo-login"></div>
+
+            <div class="grupo">
+                <label>Nombre del Usuario:</label>
+                <input type="text" id="nombreUsuario" placeholder="Ingrese su nombre">
+            </div>
+
+            <div class="grupo">
+                <label>Contraseña:</label>
+                <input type="password" id="contrasena" placeholder="Ingrese su contraseña">
+            </div>
+
+            <div id="mensajeError" class="mensaje-error" style="display:none;"></div>
+            <div id="mensajeExito" class="mensaje-exito" style="display:none;"></div>
+
+            <div class="linea"></div>
+
+            <div class="parte-final">
+                <span>NOTA: Es sensible al contexto</span>
+                <button onclick="iniciarSesion()">Aceptar</button>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            vSIAF versión 2.0 <br>
+            Copyright © 1999-2012 DGSGIF <br>
+            Todos los derechos reservados
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>
