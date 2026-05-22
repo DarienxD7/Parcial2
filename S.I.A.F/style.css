@@ -1,0 +1,134 @@
+body{
+
+    margin: 0;
+    padding: 0;
+
+    background: #d9d9d9;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.siaf{
+
+    width: 900px;
+
+    margin: 30px auto;
+
+    background: white;
+
+    border: 1px solid gray;
+
+    box-shadow: 0px 0px 10px gray;
+}
+
+
+.topo{
+
+    height: 90px;
+
+    background: linear-gradient(#0b5aa0,#2c82d8);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 20px;
+
+    font-size: 50px;
+
+    font-weight: bold;
+}
+
+
+.info{
+
+    padding: 15px;
+
+    font-size: 15px;
+}
+
+.info span{
+
+    font-weight: bold;
+}
+
+
+.titulo{
+
+    background: linear-gradient(#0b5aa0,#2c82d8);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 12px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+table{
+
+    width: 90%;
+
+    margin: 20px auto;
+
+    border-collapse: collapse;
+}
+
+th{
+
+    background: #0b5aa0;
+
+    color: white;
+
+    padding: 10px;
+
+    border: 1px solid #333;
+}
+
+td{
+
+    height: 35px;
+
+    border: 1px solid gray;
+
+    background: white;
+}
+
+
+.botones{
+
+    text-align: center;
+
+    margin: 30px;
+}
+
+button{
+
+    padding: 12px 25px;
+
+    margin: 5px;
+
+    border: 2px solid gray;
+
+    background: linear-gradient(#2c82d8,#0b5aa0);
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    box-shadow: 0px 0px 5px gray;
+}
+
+button:hover{
+
+    background: linear-gradient(#3498db,#21618c);
+}

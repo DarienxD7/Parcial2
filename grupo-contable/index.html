@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting Groups</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <div class="system-bar">
+            <span>GRUPOS CONTABLES</span>
+        </div>
+
+        <div class="unit-info">
+            <strong>UNIDAD:</strong> 0252 &nbsp;&nbsp;&nbsp; Nivel Central
+        </div>
+
+        <div class="main-form">
+            <h2 class="form-title">GRUPO CONTABLE</h2>
+
+            <div class="grid-layout">
+                <div class="field-row">
+                    <label class="field-label">Grupo</label>
+                    <input type="number" id="inputGrupo" class="input-small" placeholder="0">
+                </div>
+                <div class="field-row">
+                    <label class="field-label">Nombre</label>
+                    <select id="selectNombre" class="input-large">
+                        <option>MUEBLES Y ENSERES DE OFICINA</option>
+                        <option>EQUIPOS DE COMPUTACIÓN</option>
+                        <option>VEHÍCULOS</option>
+                        <option>EDIFICIOS Y CONSTRUCCIONES</option>
+                        <option>MAQUINARIA Y EQUIPO</option>
+                    </select>
+                </div>
+                <div class="field-row">
+                    <label class="field-label">Vida Útil</label>
+                    <input type="number" id="inputVidaUtil" class="input-small" placeholder="0">
+                </div>
+                <div class="field-row">
+                    <label class="field-label">Observaciones</label>
+                    <textarea id="textareaObs" class="textarea-field"></textarea>
+                </div>
+            </div>
+
+            <div class="checkbox-area">
+                <label><input type="checkbox" id="checkDepre"> Deprecia</label>
+            </div>
+
+            <div class="data-table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 30%;">CÓDIGO</th>
+                            <th style="width: 70%;">NOMBRE AUXILIAR</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaBody">
+                        <tr>
+                            <td colspan="2" style="text-align:center;color:#888">Cargando...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="action-footer">
+            <button class="action-btn" id="btnNuevo">Nuevo</button>
+            <button class="action-btn" id="btnModificar">Modificar</button>
+            <button class="action-btn btn-disabled" id="btnGuardar">Guardar</button>
+            <button class="action-btn" id="btnEliminar">Eliminar</button>
+            <button class="action-btn btn-disabled" id="btnDeshacer">Deshacer</button>
+            <button class="action-btn" id="btnSalir">Salir</button>
+        </div>
+    </div>
+
+    <!-- POPUP -->
+    <div id="popup" class="popup">
+        <div class="popup-top">
+            VSIAF
+            <span id="btnCerrarPopup">X</span>
+        </div>
+        <div class="popup-body">
+            <div class="icono" id="popupIcono">i</div>
+            <p id="popupMensaje"></p>
+        </div>
+        <div class="popup-footer">
+            <button id="btnAceptar">Aceptar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

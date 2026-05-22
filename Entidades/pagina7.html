@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Instalacion Entidad</title>
+    <link rel="stylesheet" href="style_pagina7.css">
+    <style>
+        .tabla-contenedor {
+            width: 520px;
+            margin: 18px auto 0 auto;
+            border: 2px solid #4a7fa5;
+            border-radius: 4px;
+            box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
+            overflow: hidden;
+        }
+        .tabla-titulo {
+            background: linear-gradient(to bottom, #2a5f8f, #1a3f6f);
+            color: white;
+            font-weight: bold;
+            font-size: 13px;
+            padding: 6px 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #dce9f5;
+            font-size: 13px;
+        }
+        thead tr {
+            background: linear-gradient(to bottom, #2a5f8f, #1a4a7a);
+            color: white;
+        }
+        thead th {
+            padding: 8px 10px;
+            text-align: left;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        tbody tr:nth-child(even) { background-color: #c8dff0; }
+        tbody tr:nth-child(odd)  { background-color: #dce9f5; }
+        tbody tr:hover           { background-color: #aecfe8; }
+        tbody td {
+            padding: 7px 10px;
+            color: #01161E;
+            border-bottom: 1px solid #4a7fa5;
+        }
+        .estado-carga {
+            text-align: center;
+            padding: 12px;
+            color: #2a5f8f;
+            font-style: italic;
+            font-size: 13px;
+            background-color: #dce9f5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ventana">
+        <div class="barra-titulo">Entidades</div>
+        <div class="contenido">
+            <h2 class="subtitulo">INSTALACION ENTIDAD</h2>
+            <div class="grupo">
+                <label>Entidad:</label>
+                <select id="selectEntidad">
+                    <option>0006 Vicepresidencia del Estado Plurinacional</option>
+                    <option>0010 Ministerio de Relaciones Exteriores</option>
+                    <option>0015 Ministerio de Gobierno</option>
+                    <option>0016 Ministerio de Educación</option>
+                    <option>0020 Ministerio de Defensa</option>
+                    <option>0025 Ministerio de la Presidencia</option>
+                    <option>0030 Ministerio de Justicia</option>
+                </select>
+            </div>
+            <div class="grupo">
+                <label>Sigla:</label>
+                <input type="text" id="inputSigla">
+            </div>
+            <div class="grupo">
+                <label>Institución:</label>
+                <input type="text" id="inputInstitucion">
+            </div>
+            <div class="botones">
+                <button id="btnOk">OK</button>
+                <button id="btnSalir">Salir</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabla de registros -->
+    <div class="tabla-contenedor">
+        <div class="tabla-titulo">Organismos registrados</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Código</th>
+                    <th>Descripción</th>
+                    <th>Sigla</th>
+                    <th>Gestión</th>
+                </tr>
+            </thead>
+            <tbody id="tablaBody">
+                <tr>
+                    <td colspan="5" class="estado-carga">Cargando datos...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="api.js"></script>
+</body>
+</html>

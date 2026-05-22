@@ -1,0 +1,196 @@
+body {
+    background: #d8d8d8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ventana {
+    width: 950px;
+    margin: 20px auto;
+    border: 2px solid #555;
+    background: #ece8d8;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.titulo {
+    height: 70px;
+    background: linear-gradient(#3d7ab3, #0e4370);
+    color: white;
+    position: relative;
+    border-bottom: 2px solid #2b2b2b;
+}
+
+.titulo h1 {
+    text-align: center;
+    margin: 0;
+    line-height: 70px;
+    font-size: 28px;
+}
+
+.unidad {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 14px;
+}
+
+.formulario {
+    padding: 20px;
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.fila label {
+    width: 110px;
+    font-weight: bold;
+    color: #0f3d67;
+}
+
+.oficina-box {
+    display: flex;
+    gap: 5px;
+    flex: 1;
+}
+
+.oficina-box input {
+    width: 50px;
+}
+
+.oficina-box input,
+.oficina-box select {
+    padding: 6px;
+    border: 1px solid #666;
+    background: #f8f5d0;
+}
+
+.estado {
+    width: 50px;
+    margin-left: 10px;
+    background: white;
+    border: 1px solid #666;
+    text-align: center;
+    padding: 6px;
+}
+
+.textarea-wrapper {
+    position: relative;
+    width: 650px;
+}
+
+.textarea-wrapper textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+    border: 2px solid #666;
+    background: #f8f5d0;
+    padding: 8px 50px 8px 8px;
+    box-sizing: border-box;
+}
+
+.textarea-buttons {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.textarea-buttons button {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #666;
+    background: #ddd;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.textarea-buttons button:hover {
+    background: #ccc;
+}
+
+.menu-derecha {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-derecha button {
+    width: 100px;
+    padding: 7px;
+    border: none;
+    background: #2d5d88;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu-derecha button:hover {
+    background: #123d63;
+}
+
+.menu-derecha .activo {
+    background: #6d6d6d;
+}
+
+/* Tabla */
+.tabla-contenedor {
+    padding: 10px 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f8f5d0;
+}
+
+table th {
+    background: #0f4370;
+    color: white;
+    border: 1px solid #555;
+    padding: 5px;
+    font-size: 14px;
+}
+
+table td {
+    border: 1px solid #999;
+    height: 28px;
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px;
+}
+
+.footer button {
+    padding: 8px 15px;
+    border: none;
+    background: #1f4f7c;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer button:hover {
+    background: #0f3354;
+}
+
+.btn-desactivado {
+    background: #8a8a8a !important;
+}
+
+.guardar {
+    background: #0d5b8f !important;
+}
