@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8dbbd6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.ventana {
+    width: 620px;
+    border: 2px solid #4a7fa5;
+    border-radius: 4px;
+}
+.barra-titulo {
+    background: linear-gradient(to bottom, #2a5f8f, #1a3f6f);
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px 12px;
+}
+.contenido {
+    background-color: #dce9f5;
+    padding: 16px 20px;
+}
+.subtitulo {
+    text-align: center;
+    background: linear-gradient(to bottom, #2a5f8f, #1a4a7a);
+    color: white;
+    margin: 0 0 16px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 2px;
+}
+.caja-campos {
+    border: 1px solid #4a7fa5;
+    border-radius: 4px;
+    padding: 16px;
+    background-color: #e8f0f8;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+.fila-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.fila-top label {
+    font-weight: bold;
+    font-size: 13px;
+    white-space: nowrap;
+}
+.fila-top input {
+    padding: 3px 6px;
+    border: 1px solid #4a7fa5;
+    background: white;
+    width: 100px;
+}
+.fila {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.fila label {
+    width: 140px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.input-ancho {
+    flex: 1;
+    padding: 3px 6px;
+    border: 1px solid #4a7fa5;
+    background: white;
+}
+textarea {
+    flex: 1;
+    height: 55px;
+    padding: 4px;
+    border: 1px solid #4a7fa5;
+    background: white;
+    resize: none;
+}
+.fila-radio {
+    align-items: center;
+}
+.radios {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 13px;
+}
+.botones {
+    display: flex;
+    gap: 4px;
+    border: 1px solid #4a7fa5;
+    padding: 8px;
+    background-color: #d0e0ee;
+    border-radius: 3px;
+    width: 580px;
+}
+button {
+    padding: 4px 10px;
+    background: linear-gradient(to bottom, #c8d8e8, #a0b8cc);
+    color: #1a1a1a;
+    border: 1px solid #6a90aa;
+    border-radius: 2px;
+    font-size: 12px;
+    cursor: pointer;
+}
+button:hover {
+    background: linear-gradient(to bottom, #d8e8f8, #b0c8dc);
+}
+.btn-activo {
+    background: linear-gradient(to bottom, #2a6090, #1a3f6f);
+    color: white;
+    border-color: #1a3f6f;
+}
