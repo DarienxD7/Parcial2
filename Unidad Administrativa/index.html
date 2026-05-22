@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Administrativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="ventana">
+
+        <div class="barra-superior">
+            Unidad Administrativa
+        </div>
+
+        <div class="titulo">
+            UNIDAD ADMINISTRATIVA
+        </div>
+
+        <div class="contenido">
+
+            <div class="fila">
+                <label>Unidad Administrativa:</label>
+                <input type="number" id="inputCodigo" placeholder="025" class="codigo">
+            </div>
+
+            <div class="fila">
+                <label>Ciudad:</label>
+                <input type="text" id="inputCiudad" placeholder="LA PAZ">
+            </div>
+
+            <div class="fila">
+                <label>Descripción:</label>
+                <div class="textarea-box">
+                    <textarea id="inputDescripcion" placeholder="Descripción..."></textarea>
+                    <div class="scroll">
+                        <button id="scrollUp">▲</button>
+                        <button id="scrollDown">▼</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="botones">
+                <button class="grabar" id="btnGrabar">Grabar</button>
+                <button class="salir" id="btnSalir">Salir</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TABLA DE REGISTROS -->
+    <div class="ventana tabla-ventana">
+
+        <div class="barra-superior">
+            Registros Guardados
+        </div>
+
+        <div class="tabla-contenedor">
+            <table id="tablaRegistros">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Ciudad (Nombre)</th>
+                        <th>Descripción</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaBody">
+                    <tr id="filaVacia">
+                        <td colspan="4">No hay registros aún.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- POPUP -->
+    <div class="popup" id="popup">
+
+        <div class="popup-top">
+            VSIAF
+            <span id="btnCerrarPopup">X</span>
+        </div>
+
+        <div class="popup-body">
+            <div class="icono" id="popupIcono">i</div>
+            <p id="popupMensaje">Los datos fueron ingresados correctamente</p>
+        </div>
+
+        <div class="popup-footer">
+            <button id="btnAceptar">Aceptar</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+body {
+    background: #bfc9d6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ventana {
+    width: 720px;
+    margin: 20px auto;
+    background: #d9d9d9;
+    border: 2px solid #666;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.barra-superior {
+    background: black;
+    color: white;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.titulo {
+    background: linear-gradient(#4d8dc5, #0d4774);
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-top: 2px solid #7fb0d6;
+    border-bottom: 2px solid #1a2f44;
+}
+
+.contenido {
+    padding: 20px 30px;
+    border: 2px solid #555;
+    margin: 15px;
+    background: #ececec;
+}
+
+.fila {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.fila label {
+    width: 220px;
+    font-size: 18px;
+    color: #2b4d68;
+    margin-top: 8px;
+}
+
+.fila input {
+    width: 400px;
+    padding: 8px;
+    border: 2px solid #666;
+    background: white;
+    font-size: 18px;
+}
+
+.codigo {
+    width: 100px !important;
+}
+
+.textarea-box {
+    display: flex;
+}
+
+.textarea-box textarea {
+    width: 400px;
+    height: 80px;
+    resize: none;
+    border: 2px solid #666;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll button {
+    width: 30px;
+    height: 40px;
+    border: 1px solid #777;
+    background: #e2e2e2;
+    cursor: pointer;
+}
+
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.botones button {
+    width: 120px;
+    padding: 10px;
+    border: 3px solid #5f6f7f;
+    background: linear-gradient(#0d6d98, #083f5a);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: inset 0 0 3px white;
+}
+
+.botones button:hover {
+    background: linear-gradient(#1187bb, #0a4f73);
+}
+
+.botones button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ── TABLA ── */
+.tabla-ventana {
+    margin-top: 10px;
+}
+
+.tabla-contenedor {
+    padding: 15px;
+    overflow-x: auto;
+}
+
+#tablaRegistros {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    background: white;
+}
+
+#tablaRegistros thead {
+    background: linear-gradient(#4d8dc5, #0d4774);
+    color: white;
+}
+
+#tablaRegistros th,
+#tablaRegistros td {
+    border: 1px solid #aaa;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+#tablaRegistros tbody tr:nth-child(even) {
+    background: #dde8f0;
+}
+
+#tablaRegistros tbody tr:hover {
+    background: #c5d9ec;
+}
+
+#tablaRegistros td[colspan] {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
+
+/* ── POPUP ── */
+.popup {
+    width: 420px;
+    background: #ececec;
+    border: 2px solid #555;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+.popup-top {
+    background: black;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    position: relative;
+}
+
+.popup-top span {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: white;
+    color: black;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.popup-body {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.icono {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #3c7ec2;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.popup-body p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.popup-footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.popup-footer button {
+    width: 140px;
+    padding: 10px;
+    font-size: 24px;
+    border: 3px solid #6b7a55;
+    background: #f8f8f8;
+    cursor: pointer;
+}
+
+.popup-footer button:hover {
+    background: #d9d9d9;
+}
